@@ -1,4 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    color: #39a6b2;
+    color:black;
     font-family: Helvetica, Arial, Helvetica, sans-serif;
 }
+/* apply styles to header */
+header {
+    padding: 150px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("../images/intro-image.jpg");
+    background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   background-position: 80%;
+    
+
+}
+header h1 {
+    font-weight: bold;
+    text-decoration:none;
+    font-size: 50px;
+    
+    margin: 0;
+}
+header a {
+    text-decoration: none;
+    color: black;
+      
+}
+
+header nav {
+    margin: 7px 0;
+
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.25vw;
+    
+}
+
+/* style About me Section */
