@@ -10,11 +10,11 @@ body {
 }
 /* apply styles to header */
 header {
-    padding: 150px 50px;
+    padding: 100px 50px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url("../images/intro-image.jpg");
+    background-image: url("../images/intro.webp");
     background-size: cover;
    background-position: center;
    background-attachment: fixed;
@@ -54,3 +54,26 @@ header nav ul li a {
 }
 
 /* style About me Section */
+
+.aboutme {
+ padding: 200px 200px;
+ background-image: url("../images/about.webp")   
+ 
+}
+.section-title {
+    font-size: 50px;
+    font-style: bold;
+    text-align: left;
+    color: #808080;
+    position: absolute;
+    left: 25px;
+
+}
+.about-text {
+    font-size: 18px;
+    color: #808080;
+    position: relative;
+    right: -195px;
+}
+
+
