@@ -99,6 +99,7 @@ header nav ul li a {
 .contact {
     padding: 100px 100px;
     background-image: url("../images/contact-me.jpg");
+    flex-wrap: wrap;
 }
 .contact nav ul {
     display: flex;
@@ -115,16 +116,87 @@ header nav ul li a {
     bottom: -10px;
     left: 850px;
     vertical-align: bottom;
+    
 
 }
 a {
     color: #000;
     text-decoration: none;
-
+    flex-wrap: wrap;
 }
 .work-img {
-    flex: 1 12%;
-    margin-right: 20px;
-    width: 100%;
-    height: auto;
+   
+    overflow-x: hidden;
 }
+ /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+ @media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+    
+      
+      
+      
+     
+      .section-title {
+        width: 80%;
+      }
+      
+      
+      
+      
+      
+      /* this will be applied on any screen smaller than 980px */
+        
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+          /* this will be applied on any screen between 768px and 575px */
+          section {
+            padding: 30px 15px;
+          }
+
+        
+          .work-img {
+            flex: 0 32%;
+            margin-right: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+          }
+        
+          .about-text {
+            flex: 100%;  
+          }
+      }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+          /* this will be applied on any screen smaller than 575px */
+          
+        
+          .section-title {
+            width: 95%;
+          }
+        
+          .aboutme {
+            width: 100%;
+          }
+        
+                 
+            }
